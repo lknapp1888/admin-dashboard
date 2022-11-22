@@ -3,7 +3,14 @@
     --background-color: #e0f2fe;
     --container-color: white;
     --header-color: var(--container-color);
+    font-family: roboto;
 }
+
+@font-face {
+    font-family: 'roboto';
+    src: url(fonts/Roboto-Regular.ttf);
+    font-style: normal;
+  }
 
 body {
     margin: 0;
@@ -86,7 +93,9 @@ body {
 }
 
 .main-nav li:hover {
-    background-color: black;
+    text-decoration:underline;
+    text-decoration-thickness: 8px;
+    text-underline-offset: 10px;
 }
 
 .main-header {
@@ -220,7 +229,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
 }
 
 .trending-item {
